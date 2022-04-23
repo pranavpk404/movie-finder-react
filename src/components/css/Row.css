@@ -1,0 +1,44 @@
+/* ROW */
+.rowTitle {
+  padding-top: 1rem;
+  text-align: center;
+}
+.rowPosters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.rowPosters::-webkit-scrollbar {
+  display: none;
+}
+
+.rowPostersContent {
+  object-fit: contain;
+  width: 150px;
+  margin: 5px 10px 5px 10px;
+  transition: transform 450ms;
+  height: auto;
+  width: auto;
+  max-width: 150px;
+}
+.rowPostersContent:hover {
+  transform: scale(1.1);
+}
+/*  Card  */
+.cardTitle {
+  margin-top: 0.5rem;
+  max-height: 16px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.movieInfo {
+  text-align: left;
+}
+.cardVoteAverage {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+.banner {
+  object-fit: contain;
+  height: 25rem;
+  width: 100%;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.bannerContents {
+  margin-left: 30px;
+}
+
+.bannerTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 9rem;
+}
+
+.bannerDesc {
+  padding-top: 0.5rem;
+  width: 45rem;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
+}
+
+.bannerFadeBottom {
+  height: 9rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+@media screen and (max-width: 710px) {
+  .bannerTitle {
+    padding-top: 13rem;
+  }
+  .banner {
+    background-size: cover;
+    background-position: center;
+  }
+}
