@@ -17,6 +17,7 @@ function Card({
         className="rowPostersContent"
         src={`${imgBaseURL}${poster_path}`}
         alt={name}
+        loading="lazy"
       />
       <span className="movieInfo">
         {/* The Same reason as banner  */}
