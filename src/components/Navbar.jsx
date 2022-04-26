@@ -43,21 +43,21 @@ function Navbar({ search }) {
               </div>
             </div>
           </li>
-        </ul>
-        <ul>
-          <div className="searchBar">
-            <input
-              type="search"
-              id="searchBar"
-              placeholder="Search for Fav movies"
-            />
-            <img
-              id="searchBtn"
-              onClick={search}
-              alt="search"
-              src="https://img.icons8.com/color/38/000000/search--v1.png"
-            />
-          </div>
+          <li>
+            <div className="searchBar">
+              <input
+                type="search"
+                id="searchBar"
+                placeholder="Search for Fav movies"
+              />
+              <img
+                id="searchBtn"
+                onClick={search}
+                alt="search"
+                src="https://img.icons8.com/color/38/000000/search--v1.png"
+              />
+            </div>
+          </li>
         </ul>
       </nav>
     </header>

@@ -15,8 +15,8 @@ function Card({
     <div className="rowPostersContentHolder">
       <img
         className="rowPostersContent"
-        src={`${imgBaseURL}${poster_path}`}
         alt={name}
+        src={`${imgBaseURL}${poster_path}`}
         loading="lazy"
       />
       <span className="movieInfo">

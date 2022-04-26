@@ -23,7 +23,7 @@ function Row({ title, fetchUrl, setProgress }) {
     fetchData();
   }, [fetchUrl, setProgress]);
 
-  const getClassByRate = (vote) => {
+  const getColorByRate = (vote) => {
     if (vote >= 8) {
       return "green";
     } else if (vote >= 5) {
@@ -48,7 +48,7 @@ function Row({ title, fetchUrl, setProgress }) {
             overview={movie.overview}
             release_date={movie.release_date}
             vote_average={movie.vote_average}
-            vote_color={getClassByRate(movie.vote_average)}
+            vote_color={getColorByRate(movie.vote_average)}
           />
         ))}
       </div>
