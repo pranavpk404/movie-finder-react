@@ -1,4 +1,3 @@
-import React from "react";
 import CustomModal from "./CustomModal";
 function Card({
   name,

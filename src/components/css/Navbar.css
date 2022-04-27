@@ -20,7 +20,7 @@
 .btn {
   margin-top: 5px;
   background-color: transparent;
-  color: white;
+  color: var(--primary-text);
   padding: 8px;
   font-size: 16px;
   border: none;
@@ -41,39 +41,40 @@
 }
 
 .dropdown-content a {
-  color: white;
+  color: var(--primary-text);
   padding: 10px;
-  background-color: #111;
+  background-color: var(--primary-bg);
   text-decoration: none;
   display: block;
   font-size: 14px;
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(107, 101, 101);
+  background-color: var(--secondary-bg);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropbtn {
-  background-color: #061f58af;
-  border-radius: 5px;
-}
+
 .searchBar {
-  background-color: hsl(223, 11%, 12%);
+  background-color: var(--secondary-bg);
   display: flex;
   padding: 3px;
 }
 /* SearchBar */
 #searchBar {
-  background-color: hsl(223, 11%, 12%);
+  background-color: var(--secondary-bg);
   border: none;
-  color: white;
+  color: var(--primary-text);
   padding: 3px;
   font-size: 1rem;
   margin: auto;
   width: 90%;
+}
+#searchBtn {
+  width: 38px;
+  height: 38px;
 }
 #searchBar:focus {
   outline: 0;

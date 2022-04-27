@@ -18,7 +18,6 @@ const request = {
   fetchFamily: `${genre}10751`,
   fetchFantasy: `${genre}14`,
   fetchHistory: `${genre}36`,
-  fetchMusic: `${genre}10402`,
   fetchFiction: `${genre}878`,
   fetchWar: `${genre}10752`,
   search: `/search/movie?api_key=${API_KEY}&query="`,

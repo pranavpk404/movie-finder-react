@@ -2,6 +2,7 @@
 .rowTitle {
   padding-top: 1rem;
   text-align: center;
+  color: var(--primary-text);
 }
 .rowPosters {
   display: flex;
@@ -29,6 +30,7 @@
 .cardTitle {
   margin-top: 0.5rem;
   max-height: 16px;
+  color: var(--primary-text);
   font-size: 0.8rem;
   overflow: hidden;
   padding-left: 10px;

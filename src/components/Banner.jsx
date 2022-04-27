@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import requests from "../utils/requests";
 import "./css/Banner.css";
 
@@ -23,7 +23,6 @@ function Banner() {
       "fetchFamily",
       "fetchFantasy",
       "fetchHistory",
-      "fetchMusic",
       "fetchFiction",
       "fetchWar",
     ];
@@ -37,14 +36,12 @@ function Banner() {
       const request = await fetch(url);
       let resp = await request.json();
       let results = resp.results;
-      // Getting random movie
       let banner = results[Math.floor(Math.random() * results.length)];
       setMovie(banner);
     }
     fetchData();
   }, []);
 
-  // To reduce the sentence
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }

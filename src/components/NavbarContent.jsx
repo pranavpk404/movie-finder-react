@@ -1,5 +1,3 @@
-import React from "react";
-
 function NavbarContent({ genre }) {
   return (
     <div>

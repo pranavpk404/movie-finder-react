@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import "./css/Row.css";
 function Row({ title, fetchUrl, setProgress }) {
@@ -34,7 +34,7 @@ function Row({ title, fetchUrl, setProgress }) {
   };
 
   return (
-    <div className="row">
+    <div id={title} className="row">
       <h2 className="rowTitle">{title}</h2>
       <div className="rowPosters">
         {movies.map((movie) => (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Row from "./components/Row";
 import requests from "./utils/requests";

@@ -1,13 +1,17 @@
+:root {
+  --primary-bg: #120f1a;
+  --secondary-bg: #15121f;
+  --primary-text: #bfd0e2;
+}
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
 #root {
-  background-color: #111;
-  color: white;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
 }

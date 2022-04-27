@@ -1,6 +1,6 @@
-import React from "react";
 import Modal from "react-modal";
 import "./css/Modal.css";
+import { useState } from "react";
 
 Modal.setAppElement("#root");
 Modal.defaultStyles.overlay.backgroundColor = "rgba(0, 0, 0, 0.9)";
@@ -15,7 +15,7 @@ function CustomModal({
   vote_average,
   vote_color,
 }) {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
     setIsOpen(false);
