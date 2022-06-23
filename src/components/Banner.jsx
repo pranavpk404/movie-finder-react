@@ -12,7 +12,6 @@ function Banner() {
       "fetchActionMovies",
       "fetchComedyMovies",
       "fetchHorrorMovies",
-      "fetchRomanceMovies",
       "fetchDocumentaries",
       "fetchAdventure",
       "fetchMystery",
