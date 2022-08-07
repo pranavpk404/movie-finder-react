@@ -32,6 +32,11 @@ function Row({ title, fetchUrl, setProgress }) {
       return "red";
     }
   };
+  const getRoundedValue =(value)=>{
+    let rounded_value = Math.trunc(value)
+    return rounded_value
+  }
+
 
   return (
     <div id={title} className="row">
@@ -47,7 +52,7 @@ function Row({ title, fetchUrl, setProgress }) {
             poster_path={movie.poster_path}
             overview={movie.overview}
             release_date={movie.release_date}
-            vote_average={movie.vote_average}
+            vote_average={getRoundedValue(movie.vote_average)}
             vote_color={getColorByRate(movie.vote_average)}
           />
         ))}
